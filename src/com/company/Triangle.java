@@ -2,7 +2,7 @@ package com.company;
 
 public class Triangle extends Shape {
 
-    private double s1,s2,s3 = 0.0;
+    double s1,s2,s3 = 0.0;
 
     public Triangle(String name) {
         super(name);

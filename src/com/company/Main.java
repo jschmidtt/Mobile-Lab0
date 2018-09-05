@@ -11,6 +11,7 @@ public class Main {
         Shape square = new Square("Square One");
         Shape circle = new Circle("Circle One");
         Shape triangle = new Triangle("Triangle One");
+        Shape equalTriangle = new EquilateralTriangle( "Equal Triangle One");
 
         System.out.println("Please enter length and height for "+ square.getName());
         double l = input.nextDouble();
@@ -27,6 +28,10 @@ public class Main {
         double s3 = input.nextDouble();
         ((Triangle) triangle).setDimensions(s1,s2,s3);
 
+        System.out.println("Please enter side for "+ equalTriangle.getName());
+        double side = input.nextDouble();
+        ((EquilateralTriangle) equalTriangle).setDimensions(side);
+
         //Preform Square Ops and Print
         System.out.println(square.getName());
         square.printDimensions();
@@ -40,7 +45,12 @@ public class Main {
         //Preform Triangle Ops and Print
         System.out.println(triangle.getName());
         triangle.printDimensions();
-        System.out.println("The area " + triangle.getArea());
+        System.out.println("The area " + triangle.getArea() +"\n");
+
+        //Preform EqualTriangle Ops and Print
+        System.out.println(equalTriangle.getName());
+        equalTriangle.printDimensions();
+        System.out.println("The area " + equalTriangle.getArea());
 
     }
 }
