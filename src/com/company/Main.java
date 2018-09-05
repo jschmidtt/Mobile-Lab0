@@ -10,6 +10,7 @@ public class Main {
 
         Shape square = new Square("Square One");
         Shape circle = new Circle("Circle One");
+        Shape triangle = new Triangle("Triangle One");
 
         System.out.println("Please enter length and height for "+ square.getName());
         double l = input.nextDouble();
@@ -20,6 +21,12 @@ public class Main {
         double r = input.nextDouble();
         ((Circle) circle).setDimensions(r);
 
+        System.out.println("Please enter three sides for "+ triangle.getName());
+        double s1 = input.nextDouble();
+        double s2 = input.nextDouble();
+        double s3 = input.nextDouble();
+        ((Triangle) triangle).setDimensions(s1,s2,s3);
+
         //Preform Square Ops and Print
         System.out.println(square.getName());
         square.printDimensions();
@@ -28,7 +35,12 @@ public class Main {
         //Preform Circle Ops and Print
         System.out.println(circle.getName());
         circle.printDimensions();
-        System.out.println("The area " + circle.getArea());
+        System.out.println("The area " + circle.getArea() +"\n");
+
+        //Preform Triangle Ops and Print
+        System.out.println(triangle.getName());
+        triangle.printDimensions();
+        System.out.println("The area " + triangle.getArea());
 
     }
 }
