@@ -4,15 +4,16 @@ public class Triangle extends Shape {
 
     double s1,s2,s3 = 0.0;
 
-    public Triangle(String name) {
-        super(name);
+    public Triangle(String name){
+        super (name);
     }
 
     //Set the sides of the triangle
+    @Override
     public void setDimensions(double side1, double side2, double side3){
-        s1 = side1;
-        s2 = side2;
-        s3 = side3;
+        this.s1 = side1;
+        this.s2 = side2;
+        this.s3 = side3;
     }
 
     //Print the sides of the triangle

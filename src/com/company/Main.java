@@ -26,11 +26,11 @@ public class Main {
         double s1 = input.nextDouble();
         double s2 = input.nextDouble();
         double s3 = input.nextDouble();
-        ((Triangle) triangle).setDimensions(s1,s2,s3);
+        triangle.setDimensions(s1,s2,s3);
 
         System.out.println("Please enter side for "+ equalTriangle.getName());
         double side = input.nextDouble();
-        ((EquilateralTriangle) equalTriangle).setDimensions(side);
+        equalTriangle.setDimensions(side);
 
         //Preform Square Ops and Print
         System.out.println(square.getName());

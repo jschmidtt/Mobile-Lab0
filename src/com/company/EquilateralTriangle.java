@@ -26,6 +26,6 @@ public class EquilateralTriangle extends Triangle {
 
     @Override
     public void printDimensions(){
-        System.out.println(getName() + " sides are side 1: "+ s1 + " side 2: " + s2 + " side 3: " + s3);
+        System.out.println(getName() + " sides are all: "+ s1);
     }
 }
