@@ -9,7 +9,6 @@ public class Triangle extends Shape {
     }
 
     //Set the sides of the triangle
-    @Override
     public void setDimensions(double side1, double side2, double side3){
         this.s1 = side1;
         this.s2 = side2;
